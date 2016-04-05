@@ -1,0 +1,6 @@
+clr;
+plus 2;
+times 5;
+plus 3;
+disp;
+

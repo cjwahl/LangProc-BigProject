@@ -1,0 +1,14 @@
+clr;
+get;
+rep 4;
+plus 2;
+plus 3;
+disp;
+clr;
+plus 5;
+plus 6;
+plus 7;
+
+
+disp;
+clr;

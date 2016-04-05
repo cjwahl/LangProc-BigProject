@@ -1,0 +1,5 @@
+clr;
+plus 2;
+disp;
+plus 5;
+disp;
