@@ -1,5 +1,11 @@
-clr;
-plus 2;
-disp;
-plus 5;
-disp;
+turtle a
+turtle b
+a notrail
+a foward 100
+a trail
+a color blue
+a foward 100
+b left
+b foward 100
+a right
+a foward 100

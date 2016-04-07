@@ -1,17 +1,17 @@
 
-go: lex.yy.c cmach.tab.c 
-	gcc cmach.tab.c lex.yy.c -lfl -ly -o go 
+go: lex.yy.c turtle.tab.c 
+	gcc turtle.tab.c lex.yy.c -lfl -ly -o go 
 
-lex.yy.c: cmach.l
-	flex -i cmach.l
+lex.yy.c: turtle.l
+	flex -i turtle.l
 
-cmach.tab.c: cmach.y
-	bison -dv cmach.y
+turtle.tab.c: turtle.y
+	bison -dv turtle.y
 
 clean:
 	rm -f lex.yy.c 
-	rm -f cmach.output
-	rm -f cmach.tab.h
-	rm -f cmach.tab.c
+	rm -f turtle.output
+	rm -f turtle.tab.h
+	rm -f turtle.tab.c
 	rm -f go 
 
