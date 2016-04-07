@@ -52,8 +52,7 @@ input
     ;
 
 line
-    : ';'
-    |  cmd ';'           
+    : cmd           
                    {
                      strcpy( $$.str, $1.str);
                    }

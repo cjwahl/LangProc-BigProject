@@ -395,7 +395,7 @@ union yyalloc
 /* YYNNTS -- Number of nonterminals.  */
 #define YYNNTS  5
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  14
+#define YYNRULES  13
 /* YYNSTATES -- Number of states.  */
 #define YYNSTATES  19
 
@@ -445,8 +445,8 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    38,    38,    45,    47,    54,    56,    63,    69,    76,
-      81,    86,    93,    98,   103
+       0,    38,    38,    45,    47,    55,    62,    68,    75,    80,
+      85,    92,    97,   102
 };
 #endif
 
@@ -494,8 +494,8 @@ static const yytype_int8 yypact[] =
      means the default is an error.  */
 static const yytype_uint8 yydefact[] =
 {
-       3,     0,     2,     1,     0,     0,     4,     6,     7,     0,
-       9,    10,     0,    12,    13,     0,    11,     8,    14
+       3,     0,     2,     1,     0,     0,     4,     5,     6,     0,
+       8,     9,     0,    11,    12,     0,    10,     7,    13
 };
 
   /* YYPGOTO[NTERM-NUM].  */
@@ -536,15 +536,15 @@ static const yytype_uint8 yystos[] =
   /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
 static const yytype_uint8 yyr1[] =
 {
-       0,    16,    17,    18,    18,    19,    19,    20,    20,    20,
-      20,    20,    20,    20,    20
+       0,    16,    17,    18,    18,    19,    20,    20,    20,    20,
+      20,    20,    20,    20
 };
 
   /* YYR2[YYN] -- Number of symbols on the right hand side of rule YYN.  */
 static const yytype_uint8 yyr2[] =
 {
-       0,     2,     1,     0,     2,     0,     1,     2,     3,     2,
-       2,     3,     2,     2,     3
+       0,     2,     1,     0,     2,     1,     2,     3,     2,     2,
+       3,     2,     2,     3
 };
 
 
@@ -1239,16 +1239,16 @@ yyreduce:
 #line 1240 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 6:
-#line 57 "turtle.y" /* yacc.c:1646  */
+  case 5:
+#line 56 "turtle.y" /* yacc.c:1646  */
     {
                      strcpy( (yyval).str, (yyvsp[0]).str);
                    }
 #line 1248 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 7:
-#line 64 "turtle.y" /* yacc.c:1646  */
+  case 6:
+#line 63 "turtle.y" /* yacc.c:1646  */
     { 
             strcpy( (yyval).str, "var ");
             strcat( (yyval).str, (yyvsp[0]).str );
@@ -1257,8 +1257,8 @@ yyreduce:
 #line 1258 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 8:
-#line 70 "turtle.y" /* yacc.c:1646  */
+  case 7:
+#line 69 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-2]).str);
             strcat( (yyval).str, ".forward(");
@@ -1268,8 +1268,8 @@ yyreduce:
 #line 1269 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 9:
-#line 77 "turtle.y" /* yacc.c:1646  */
+  case 8:
+#line 76 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-1]).str);
             strcat( (yyval).str, ".penDown = false;\n");
@@ -1277,8 +1277,8 @@ yyreduce:
 #line 1278 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 10:
-#line 82 "turtle.y" /* yacc.c:1646  */
+  case 9:
+#line 81 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-1]).str);
             strcat( (yyval).str, ".penDown = true;\n");
@@ -1286,8 +1286,8 @@ yyreduce:
 #line 1287 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 11:
-#line 87 "turtle.y" /* yacc.c:1646  */
+  case 10:
+#line 86 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-2]).str);
             strcat( (yyval).str, ".penColor = color.");
@@ -1297,8 +1297,8 @@ yyreduce:
 #line 1298 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 12:
-#line 94 "turtle.y" /* yacc.c:1646  */
+  case 11:
+#line 93 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-1]).str);
             strcat( (yyval).str, ".right();\n");
@@ -1306,8 +1306,8 @@ yyreduce:
 #line 1307 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 13:
-#line 99 "turtle.y" /* yacc.c:1646  */
+  case 12:
+#line 98 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-1]).str);
             strcat( (yyval).str, ".left();\n");
@@ -1315,8 +1315,8 @@ yyreduce:
 #line 1316 "turtle.tab.c" /* yacc.c:1646  */
     break;
 
-  case 14:
-#line 104 "turtle.y" /* yacc.c:1646  */
+  case 13:
+#line 103 "turtle.y" /* yacc.c:1646  */
     {
             strcpy( (yyval).str, (yyvsp[-2]).str);
             strcat( (yyval).str, ".turn(");
@@ -1555,7 +1555,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 112 "turtle.y" /* yacc.c:1906  */
+#line 111 "turtle.y" /* yacc.c:1906  */
 
 
 
